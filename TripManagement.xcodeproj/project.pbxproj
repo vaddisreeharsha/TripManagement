@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324C9BCC26FE025F008F6ACD /* TripDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BCB26FE025F008F6ACD /* TripDataRepository.swift */; };
+		324C9BDB26FE0A3E008F6ACD /* TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BDA26FE0A3E008F6ACD /* TripData.swift */; };
+		324C9BE426FE8374008F6ACD /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BE026FE8374008F6ACD /* Location+CoreDataClass.swift */; };
+		324C9BE526FE8374008F6ACD /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BE126FE8374008F6ACD /* Location+CoreDataProperties.swift */; };
+		324C9BE626FE8374008F6ACD /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BE226FE8374008F6ACD /* Trip+CoreDataClass.swift */; };
+		324C9BE726FE8374008F6ACD /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BE326FE8374008F6ACD /* Trip+CoreDataProperties.swift */; };
+		324C9BEA26FE9D49008F6ACD /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9BE926FE9D49008F6ACD /* RepeatingTimer.swift */; };
+		3253BAF727024326002AD5D9 /* TripsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253BAF627024326002AD5D9 /* TripsListVC.swift */; };
+		3253BAFC27025914002AD5D9 /* TripsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253BAFB27025914002AD5D9 /* TripsListVM.swift */; };
+		32738AF526FF2ECA002016FA /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32738AF426FF2ECA002016FA /* LocationManger.swift */; };
 		32A9E18126FC69C900A434E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9E18026FC69C900A434E3 /* AppDelegate.swift */; };
 		32A9E18326FC69C900A434E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9E18226FC69C900A434E3 /* SceneDelegate.swift */; };
 		32A9E18526FC69C900A434E3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9E18426FC69C900A434E3 /* HomeVC.swift */; };
@@ -14,9 +24,23 @@
 		32A9E18B26FC69C900A434E3 /* TripManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32A9E18926FC69C900A434E3 /* TripManagement.xcdatamodeld */; };
 		32A9E18D26FC69E000A434E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A9E18C26FC69E000A434E3 /* Assets.xcassets */; };
 		32A9E19026FC69E000A434E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A9E18E26FC69E000A434E3 /* LaunchScreen.storyboard */; };
+		32A9E19826FCFC9A00A434E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9E19726FCFC9A00A434E3 /* Constants.swift */; };
+		32A9E19E26FD019000A434E3 /* HomeVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9E19D26FD019000A434E3 /* HomeVCViewModel.swift */; };
+		32A9E1AB26FD342A00A434E3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A9E1AA26FD342A00A434E3 /* CoreLocation.framework */; };
+		32D8024526FD4703005E5E34 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8024426FD4703005E5E34 /* PersistentStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324C9BCB26FE025F008F6ACD /* TripDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataRepository.swift; sourceTree = "<group>"; };
+		324C9BDA26FE0A3E008F6ACD /* TripData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripData.swift; sourceTree = "<group>"; };
+		324C9BE026FE8374008F6ACD /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		324C9BE126FE8374008F6ACD /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		324C9BE226FE8374008F6ACD /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		324C9BE326FE8374008F6ACD /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		324C9BE926FE9D49008F6ACD /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		3253BAF627024326002AD5D9 /* TripsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListVC.swift; sourceTree = "<group>"; };
+		3253BAFB27025914002AD5D9 /* TripsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListVM.swift; sourceTree = "<group>"; };
+		32738AF426FF2ECA002016FA /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
 		32A9E17D26FC69C900A434E3 /* TripManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A9E18026FC69C900A434E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A9E18226FC69C900A434E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +50,10 @@
 		32A9E18C26FC69E000A434E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A9E18F26FC69E000A434E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A9E19126FC69E000A434E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A9E19726FCFC9A00A434E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		32A9E19D26FD019000A434E3 /* HomeVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCViewModel.swift; sourceTree = "<group>"; };
+		32A9E1AA26FD342A00A434E3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		32D8024426FD4703005E5E34 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +61,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A9E1AB26FD342A00A434E3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324C9BCA26FE0221008F6ACD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				324C9BCB26FE025F008F6ACD /* TripDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		324C9BD926FE0A1B008F6ACD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				324C9BDA26FE0A3E008F6ACD /* TripData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		324C9BE826FE9D06008F6ACD /* RepeatingTimer */ = {
+			isa = PBXGroup;
+			children = (
+				324C9BE926FE9D49008F6ACD /* RepeatingTimer.swift */,
+			);
+			path = RepeatingTimer;
+			sourceTree = "<group>";
+		};
+		3253BAF327024101002AD5D9 /* TripsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				3253BAF5270242BC002AD5D9 /* TripsListViewModel */,
+				3253BAF4270242B1002AD5D9 /* View */,
+			);
+			path = TripsListVC;
+			sourceTree = "<group>";
+		};
+		3253BAF4270242B1002AD5D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3253BAF627024326002AD5D9 /* TripsListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3253BAF5270242BC002AD5D9 /* TripsListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3253BAFB27025914002AD5D9 /* TripsListVM.swift */,
+			);
+			path = TripsListViewModel;
+			sourceTree = "<group>";
+		};
+		32738AF326FF2E2F002016FA /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				32738AF426FF2ECA002016FA /* LocationManger.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
 		32A9E17426FC69C900A434E3 = {
 			isa = PBXGroup;
 			children = (
 				32A9E17F26FC69C900A434E3 /* TripManagement */,
 				32A9E17E26FC69C900A434E3 /* Products */,
+				32A9E1A926FD342A00A434E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +145,68 @@
 		32A9E17F26FC69C900A434E3 /* TripManagement */ = {
 			isa = PBXGroup;
 			children = (
+				3253BAF327024101002AD5D9 /* TripsListVC */,
+				32738AF326FF2E2F002016FA /* LocationManager */,
+				324C9BE826FE9D06008F6ACD /* RepeatingTimer */,
+				324C9BD926FE0A1B008F6ACD /* Model */,
+				32A9E19F26FD105800A434E3 /* CoreData */,
+				32A9E19B26FD014600A434E3 /* HomeVC */,
 				32A9E18026FC69C900A434E3 /* AppDelegate.swift */,
 				32A9E18226FC69C900A434E3 /* SceneDelegate.swift */,
-				32A9E18426FC69C900A434E3 /* HomeVC.swift */,
 				32A9E18626FC69C900A434E3 /* Main.storyboard */,
 				32A9E18C26FC69E000A434E3 /* Assets.xcassets */,
 				32A9E18E26FC69E000A434E3 /* LaunchScreen.storyboard */,
 				32A9E19126FC69E000A434E3 /* Info.plist */,
 				32A9E18926FC69C900A434E3 /* TripManagement.xcdatamodeld */,
+				32A9E19726FCFC9A00A434E3 /* Constants.swift */,
 			);
 			path = TripManagement;
+			sourceTree = "<group>";
+		};
+		32A9E19B26FD014600A434E3 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				32A9E19C26FD016100A434E3 /* ViewModel */,
+				32A9E18426FC69C900A434E3 /* HomeVC.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		32A9E19C26FD016100A434E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				32A9E19D26FD019000A434E3 /* HomeVCViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32A9E19F26FD105800A434E3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				324C9BCA26FE0221008F6ACD /* Repository */,
+				32A9E1A026FD106800A434E3 /* ManagedObjectModels */,
+				32D8024426FD4703005E5E34 /* PersistentStorage.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		32A9E1A026FD106800A434E3 /* ManagedObjectModels */ = {
+			isa = PBXGroup;
+			children = (
+				324C9BE026FE8374008F6ACD /* Location+CoreDataClass.swift */,
+				324C9BE126FE8374008F6ACD /* Location+CoreDataProperties.swift */,
+				324C9BE226FE8374008F6ACD /* Trip+CoreDataClass.swift */,
+				324C9BE326FE8374008F6ACD /* Trip+CoreDataProperties.swift */,
+			);
+			path = ManagedObjectModels;
+			sourceTree = "<group>";
+		};
+		32A9E1A926FD342A00A434E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A9E1AA26FD342A00A434E3 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +279,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324C9BE726FE8374008F6ACD /* Trip+CoreDataProperties.swift in Sources */,
+				32D8024526FD4703005E5E34 /* PersistentStorage.swift in Sources */,
+				3253BAF727024326002AD5D9 /* TripsListVC.swift in Sources */,
+				32738AF526FF2ECA002016FA /* LocationManger.swift in Sources */,
+				32A9E19826FCFC9A00A434E3 /* Constants.swift in Sources */,
+				324C9BEA26FE9D49008F6ACD /* RepeatingTimer.swift in Sources */,
+				324C9BDB26FE0A3E008F6ACD /* TripData.swift in Sources */,
 				32A9E18526FC69C900A434E3 /* HomeVC.swift in Sources */,
 				32A9E18126FC69C900A434E3 /* AppDelegate.swift in Sources */,
+				3253BAFC27025914002AD5D9 /* TripsListVM.swift in Sources */,
 				32A9E18326FC69C900A434E3 /* SceneDelegate.swift in Sources */,
+				32A9E19E26FD019000A434E3 /* HomeVCViewModel.swift in Sources */,
+				324C9BE626FE8374008F6ACD /* Trip+CoreDataClass.swift in Sources */,
+				324C9BE526FE8374008F6ACD /* Location+CoreDataProperties.swift in Sources */,
 				32A9E18B26FC69C900A434E3 /* TripManagement.xcdatamodeld in Sources */,
+				324C9BE426FE8374008F6ACD /* Location+CoreDataClass.swift in Sources */,
+				324C9BCC26FE025F008F6ACD /* TripDataRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

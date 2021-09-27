@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Odx-qe-Jes">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -17,28 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-Dp-Abp">
-                                <rect key="frame" x="16" y="20" width="64" height="30"/>
+                                <rect key="frame" x="16" y="64" width="64" height="30"/>
                                 <state key="normal" title="Start Trip"/>
                                 <connections>
                                     <action selector="onClickStartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfV-fr-Pjr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qc-GE-xHs">
-                                <rect key="frame" x="296" y="20" width="63" height="30"/>
+                                <rect key="frame" x="296" y="64" width="63" height="30"/>
                                 <state key="normal" title="Stop Trip"/>
                                 <connections>
                                     <action selector="onClickStopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8c-TF-if8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGH-cd-spQ">
-                                <rect key="frame" x="141.5" y="318.5" width="92" height="30"/>
+                                <rect key="frame" x="141.5" y="340.5" width="92" height="30"/>
                                 <state key="normal" title="View All Trips"/>
                                 <connections>
                                     <action selector="onTapViewAllTrips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddp-db-yuL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Trip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utv-cj-FSI">
-                                <rect key="frame" x="142" y="248" width="91" height="20.5"/>
+                                <rect key="frame" x="142" y="270" width="91" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,6 +57,7 @@
                             <constraint firstItem="7Qc-GE-xHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sHy-aM-EDm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XNj-a6-gLC"/>
                     <connections>
                         <outlet property="currentTripName" destination="utv-cj-FSI" id="uUX-oV-Zca"/>
                         <outlet property="startTripBtn" destination="aZL-Dp-Abp" id="4iE-KX-M6a"/>
@@ -64,6 +65,39 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="93.103448275862078"/>
+        </scene>
+        <!--Trips ListVC-->
+        <scene sceneID="eGU-eD-L46">
+            <objects>
+                <viewController id="Rs0-pi-Gep" customClass="TripsListVC" customModule="TripManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdv-nv-sF9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XyI-mE-gr0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBO-dh-po2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ygW-Ng-wpN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Odx-qe-Jes" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="foG-rf-WJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q23-Sa-9yA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HA-iB-2dF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-61.600000000000001" y="93.103448275862078"/>
         </scene>

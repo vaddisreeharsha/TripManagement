@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="accuracy" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="hasTrip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="haveLocations" inverseEntity="Trip"/>
+    </entity>
+    <entity name="Trip" representedClassName="Trip" syncable="YES">
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tripid" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripName" attributeType="String" defaultValueString="Default Trip"/>
+        <relationship name="haveLocations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="hasTrip" inverseEntity="Location"/>
+    </entity>
+    <elements>
+        <element name="Location" positionX="192.79833984375" positionY="-138.8463439941406" width="128" height="104"/>
+        <element name="Trip" positionX="464.2508544921875" positionY="-214.1480102539062" width="128" height="104"/>
+    </elements>
 </model>
